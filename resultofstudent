@@ -1,0 +1,31 @@
+name=input("Enter Name:")
+id=input("Enter Student id:")
+dlist=[ ]
+birthdate=(input("Enter Birth Date:"))
+print("Enter 3 Subjects Marks:")
+for i in range(0,3):
+	ele=int(input())
+	dlist.append(ele)
+print("Details are as follows")
+print("Name is :",name)
+print("Student id :",id)
+print("Birthdate :",birthdate)
+print("Subjects are as follows")
+for i in dlist:
+	print(i)
+print("Total of all subjects are as follows")
+total=sum(dlist)
+print(total)
+percentage=(total/300)*100
+print("Percentage is ",percentage)
+if percentage>70:
+	print("You have secured First class with distinction..")
+elif percentage>50 and percentage<60:
+	print("You have secured First class..")
+elif percentage>40 and percentage<50:
+	print("You have secured Second class.")
+elif percentage >35 and percentage<40:
+	print("You have secured Third class.")
+else:
+	print("Sorry u have failed.")
+	print("Better luck next time.")

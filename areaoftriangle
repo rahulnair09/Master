@@ -1,0 +1,4 @@
+base=int(input("enter a base to find area of rectangle:"))
+height=int(input("enter a height  to find area of rectangle:"))
+area=0.5*base*height
+print("area of rectangle is as follows",area)
